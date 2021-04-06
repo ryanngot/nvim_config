@@ -1,0 +1,18 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["json", "python"],
+
+  // python config
+  "python.venvPath": "",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+		"--style",
+		"{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
+	],
+
+  // Snippets
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
+
+  // ale
+  "diagnostic.displayByAle": true,
+
+}
