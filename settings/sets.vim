@@ -23,6 +23,7 @@ set relativenumber
 set scrolloff=3
 set sidescrolloff=7
 set cursorline " line pointer highlight
+set guifont=Meslo_Nerd_Font:h11
 
 " support devices clipboard
 set clipboard+=unnamedplus

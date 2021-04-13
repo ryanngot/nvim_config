@@ -12,7 +12,7 @@ call plug#begin('~/.config/nvim/plugs')
    Plug 'rafi/awesome-vim-colorschemes'
 
    " Ale
-   Plug 'dense-analysis/ale'
+   "Plug 'dense-analysis/ale'
 
    " Snippets
    Plug 'honza/vim-snippets'

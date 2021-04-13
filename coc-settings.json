@@ -1,18 +1,33 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["json", "python"],
+  "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.snippets.enable": true,
 
   // python config
-  "python.venvPath": "",
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfArgs": [
-		"--style",
-		"{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
-	],
+  "python.venvPath": "~/virtualenvs",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/virtualenvs/neovim/bin/black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintPath": "~/virtualenvs/neovim/bin/pylint",
+  "python.linting.flake8Path": "~/virtualenvs/neovim/bin/flake8",
 
-  // Snippets
+   // Snippets
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
 
-  // ale
-  "diagnostic.displayByAle": true,
+  //diagnostic
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic-languageserver.filetypes": {
+    "sh": "shellcheck"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "sh": "shfmt"
+  },
+  "diagnostic-languageserver.formatters": {
+    "shfmt": {
+      "command": "shfmt",
+      "args": ["-i", "2", "-bn", "-ci", "-sr"]
+    }
+  }
 
 }
